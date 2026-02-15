@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IVI Store - Accessoires tendance, gadgets modernes, personnalisation et livraison à domicile au meilleur prix.">
+    <meta name="keywords" content="IVI Store, accessoires tendance, gadgets Cameroun, gourde LED, accessoires mode">
+    <title>IVI STORE - Boutique Officielle</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0f2c, #121a4a);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header img {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            letter-spacing: 4px;
+        }
+
+        .slogan {
+            font-size: 18px;
+            color: #7fb3ff;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0,0,0,0.3);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00c6ff;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 20px;
+            width: 260px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            border-radius: 40px;
+            background: linear-gradient(45deg, #2d7dff, #00c6ff);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #00c6ff, #2d7dff);
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            padding: 15px 20px;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0,0,0,0.3);
+            margin-top: 60px;
+        }
+
+        input, textarea {
+            width: 90%;
+            max-width: 400px;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 10px;
+            border: none;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        h2 {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="IVI Store Logo">
+    <h1>IVI STORE</h1>
+    <p class="slogan">UN PEU DE TOUT — TOUJOURS AU MEILLEUR PRIX</p>
+</header>
+
+<nav>
+    <a href="#produits">Produits</a>
+    <a href="#catalogue">Catalogue</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="section" id="produits">
+    <h2>Nos Produits</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="produit1.jpeg" alt="Accessoires Mode">
+            <h3>Accessoires Mode</h3>
+            <p>Gourdes , gadgets tendances et accessoires modernes.</p>
+        </div>
+
+        <div class="card">
+            <img src="produit2.jpeg" alt="Personnalisation">
+            <h3>Personnalisation</h3>
+            <p>Gravure, emballage cadeau et personnalisations.</p>
+        </div>
+
+        <div class="card">
+            <img src="produit3.jpeg" alt="Livraison">
+            <h3>Livraison</h3>
+            <p>Livraison à domicile disponible.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="catalogue">
+    <h2>Catalogue Produits</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="gourde.jpeg" alt="Gourde ">
+            <h3>Gourde </h3>
+            <p>Produit tendance et pratique.</p>
+            <a class="btn" href="https://wa.me/237692080618?text=Bonjour,%20je%20veux%20commander%20la%20Gourde%20LED" target="_blank">Commander</a>
+        </div>
+
+        <div class="card">
+            <img src="trepied.jpeg" alt="Trépied">
+            <h3>Trépied</h3>
+            <p>Idéal pour photos et vidéos.</p>
+            <a class="btn" href="https://wa.me/237692080618?text=Bonjour,%20je%20veux%20commander%20le%20Trépied" target="_blank">Commander</a>
+        </div>
+
+        <div class="card">
+            <img src="gadgets.jpeg" alt="Accessoires Gadgets">
+            <h3>Accessoires Gadgets</h3>
+            <p>Produits modernes et stylés.</p>
+            <a class="btn" href="https://wa.me/237692080618?text=Bonjour,%20je%20veux%20commander%20les%20Accessoires%20Gadgets" target="_blank">Commander</a>
+        </div>
+    </div>
+</section>
+
+
+    <section class="section" id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/mvzbavkr" method="POST">
+        <input type="text" name="name" placeholder="Nom" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <textarea name="message" placeholder="Votre message" required></textarea><br>
+        <button class="btn" type="submit">Envoyer</button>
+    </form>
+</section>
+form>
+</section>
+
+<a class="whatsapp" href="https://wa.me/237692080618" target="_blank">WhatsApp</a>
+
+<footer>
+    <p>© 2026 IVI STORE — Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
